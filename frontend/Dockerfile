@@ -1,5 +1,2 @@
-FROM node:18-alpine
-WORKDIR /app
-COPY . .
-EXPOSE 3000
-CMD ["node", "index.js"]
+FROM alpine
+CMD echo 'Frontend running on 3000'

@@ -1,1 +1,2 @@
-FROM alpine`nCMD ["echo", "Backend running on 8080"]
+FROM alpine
+CMD echo 'Backend running on 8080'
