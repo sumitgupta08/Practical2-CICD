@@ -8,9 +8,12 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+
       - name: Build Frontend Image
         run: docker build -t my-frontend ./frontend
+
       - name: Build Backend Image
         run: docker build -t my-backend ./backend
+
       - name: Test Config
-        run: docker-compose config
+        run: docker compose config
